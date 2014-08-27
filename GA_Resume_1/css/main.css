@@ -1,0 +1,43 @@
+	header{
+		text-align: center;
+		background: url('http://1hdwallpapers.com/wallpapers/panorama_of_central_park_nyc.jpg');
+		background-size: cover;
+		color:black;
+	}
+	img{
+		border-radius:180px;
+		border:10px red;
+		height:200px;
+		margin:20px;
+	}
+	nav{
+		background:white;
+		opacity:.7;
+	}
+	a{
+		color:black;
+		text-decoration: none;
+	}
+	ul{
+		padding:20px;
+	}
+	li{
+		padding:0px 40px 0px 40px;
+		display: inline;
+		font-family:times;
+		font-size:30px;
+		font-weight:bolder;
+		border:0px;
+		margin:0px;
+	}
+	#specialpara {
+		color:blue;
+	}
+	body {
+		text-align: center;
+		font-family:helvetica;
+		color:gray;
+	}
+	.main-paragraph{
+		font-size:40px;
+	}
