@@ -4,7 +4,7 @@
 		background-size: cover;
 		color:black;
 	}
-	img{
+	.mainimg{
 		border-radius:180px;
 		border:10px red;
 		height:200px;
@@ -13,6 +13,7 @@
 	nav{
 		background:white;
 		opacity:.7;
+		padding:.2px;
 	}
 	a{
 		color:black;
@@ -38,6 +39,31 @@
 		font-family:helvetica;
 		color:gray;
 	}
+	article{
+		height: 200px;
+		text-align:justify;
+		max-width: 580px;
+		margin: 0 auto;
+		color:black;
+		border-radius: 12px;
+	}
+	.specialarticle{
+		color: rgba(255, 255, 255, 1);
+		background: black;
+		opacity: .8;
+		padding: 10px;
+		bottom: 0;
+		line-height: 20px;
+	}
 	.main-paragraph{
 		font-size:40px;
+	}
+	.first{
+		background: url("http://www.visit-haifa.org/prdPics/112_tour_banner_1.jpg");
+	}
+	.second{
+		background: url("http://images.budgettravel.com/1204zoobabiesmaggiegiraffe3-4102012-141938_panoramic.jpeg");
+	}
+	.third{
+		background: url("http://images.budgettravel.com/02babyzoovert-5202011_panoramic.jpeg");
 	}
