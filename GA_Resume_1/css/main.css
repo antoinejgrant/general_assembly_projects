@@ -1,4 +1,9 @@
 	header{
+		z-index: 10000;
+		position: fixed; 
+		top: 0px;
+		left: 0px;
+		width: 100%; 
 		text-align: center;
 		background: url('http://1hdwallpapers.com/wallpapers/panorama_of_central_park_nyc.jpg');
 		background-size: cover;
@@ -6,7 +11,7 @@
 	}
 	nav{
 		background:#34495E;
-		opacity:;
+		opacity: .9;
 		padding:10px;
 	}
 	a{
@@ -39,13 +44,12 @@
 		border:0px;
 		margin:20px;
 		background-color: #16A085;
-		width: 200px;
 	}
 	.mainimg{
 		border-radius:180px;
-		border:10px white;
-		height:200px;
-		margin:20px;
+		border:0px white;
+		height:150px;
+		margin:10px;
 		opacity: .9;
 	}
 	.specialarticle{
@@ -53,7 +57,7 @@
 		background: black;
 		opacity: .8;
 		padding: 10px;
-		bottom: 0;
+		top: 100px;
 		line-height: 20px;
 	}
 	.main-paragraph{
@@ -72,6 +76,8 @@
 		position:fixed;
 	}
 	#container {
+	top: 250px;
+	position: absolute;
     width:100%;
     text-align:center;
 	}
