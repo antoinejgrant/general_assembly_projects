@@ -4,6 +4,12 @@
 		background-size: cover;
 		color:black;
 	}
+	.mainimg{
+		border-radius:180px;
+		border:10px white;
+		height:200px;
+		margin:20px;
+	}
 	nav{
 		background:#34495E;
 		opacity:;
@@ -16,6 +22,21 @@
 	ol{
 		padding:0px;
 		margin: 15px;
+		width: 100px;
+	}
+	.nav{
+		padding:10px 40px 10px 40px;
+		display: inline;
+		font-family:times;
+		font-size:20px;
+		font-weight:bolder;
+		border:0px;
+		margin:20px;
+		background-color: #16A085;
+		width: 200px;
+	}
+	#fixed {
+		position:fixed;
 	}
 	body {
 		text-align: center;
@@ -29,24 +50,6 @@
 		margin: 0 auto;
 		color:black;
 		border-radius: 12px;
-	}
-	.nav{
-		padding:10px 40px 10px 40px;
-		display: inline;
-		font-family:times;
-		font-size:20px;
-		font-weight:bolder;
-		border:0px;
-		margin:20px;
-		background-color: #16A085;
-		width: 200px;
-	}
-	.mainimg{
-		border-radius:180px;
-		border:10px white;
-		height:200px;
-		margin:20px;
-		opacity: .9;
 	}
 	.specialarticle{
 		color: rgba(255, 255, 255, 1);
@@ -67,26 +70,4 @@
 	}
 	.third{
 		background: url("http://images.budgettravel.com/02babyzoovert-5202011_panoramic.jpeg");
-	}
-	#fixed {
-		position:fixed;
-	}
-	#container {
-    width:100%;
-    text-align:center;
-	}
-	#left {
-	    float:left;
-	    width:100px;
-	}
-
-	#center {
-	    display: inline-block;
-	    margin:0 auto;
-	    width:100px;
-	}
-
-	#right {
-	    float:right;
-	    width:100px;
 	}
