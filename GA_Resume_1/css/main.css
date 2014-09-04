@@ -1,3 +1,7 @@
+	p::first-letter { 
+    font-size: 200%;
+    color: #BDC3C7;
+	}
 	header{
 		z-index: 10000;
 		position: fixed; 
