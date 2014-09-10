@@ -37,6 +37,7 @@ li{
 	background-color: #2C3E50; 
 	border: .2em solid white;
 	color: white;
+	border-radius: 25px;
 }
 li:hover{
 	background-color: #8E44AD;
