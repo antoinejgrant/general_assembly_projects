@@ -1,0 +1,37 @@
+body{
+	text-align:center;
+}
+.light{
+	width: 100px;
+	height: 100px;
+	border: .2em black solid;
+	border-radius:50%;
+	background-color: white;
+	margin: 1em;
+	transition: background-color 1s ease 0s;
+}
+.traffic-light{
+	border: .2em black solid;
+	width: 140px;
+	float: left;
+}
+.green:hover{
+	background-color: green;
+}
+.yellow:hover{
+	background-color: yellow;
+}
+.red:hover{
+	background-color: red;
+}
+.controls{
+	float: left;
+	width: 50px;
+	font-family: Helvetica;
+	font-size: 3em;
+}
+li{
+	padding:1em;
+	padding-top: 0px;
+	list-style: none;
+}
