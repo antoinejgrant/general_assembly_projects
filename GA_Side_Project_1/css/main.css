@@ -19,7 +19,7 @@ header{
 	padding-top:.5em;
 	padding-bottom: .5em;
 	background-color: #16A085;
-	border-radius: 10px;
+	border-radius: 6px;
 	color:white;
 }
 #login:hover{
@@ -35,7 +35,7 @@ header{
 	position: relative;
 	top:50px;
 	left: 0px;
-	height: 400px;
+	height: 200px;
 	opacity: .8;
 }
 li{
@@ -46,6 +46,7 @@ li{
 	text-decoration: none;
 	background-color: #2C3E50;
 	color: #BDC3C7;
+	font-weight: 300;
 	cursor:pointer;
 }
 li:hover{
