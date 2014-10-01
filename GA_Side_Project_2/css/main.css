@@ -50,11 +50,14 @@ nav{
 	color:white;
 	border: .1em solid white;
 }
-#login:hover{
+#loginButton:hover{
 	background-color: #1ABC9C;
 }
 #side_margin{
 	margin-left: 1em;
+	margin-right: 2em;
+}
+#right_margin{
 	margin-right: 2em;
 }
 #img_cover{

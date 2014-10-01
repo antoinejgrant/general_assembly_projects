@@ -48,3 +48,5 @@ $("#password").on("input", function() {
     $('.login').removeClass('buttonafter');
   }
 });
+
+var loginButton = document.getElementById()
