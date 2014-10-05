@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<header id="titleBar">
+		<h1 id = "title">Let's play a game!</h1>
+	</header>
+	<div class="centered">
+		<div class="select" id="scissors" onclick="choice('scissors')">Scissors</div>
+		<div class="select" id="rock" onclick="choice('rock')">Rock</div>
+		<div class="select" id="paper" onclick="choice('paper')">Paper</div>
+	</div>
+	<div class="scoreboard">
+		<div id="home">
+			<p id="homeScore">0</p>
+			<p>Home Score</p>
+		</div>
+		<div id="away">
+			<p id="awayScore">0</p>
+			<p>Away Score</p>
+		</div>
+	</div>
+</body>
+</html>
