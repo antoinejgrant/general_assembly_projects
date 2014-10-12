@@ -6,6 +6,14 @@ body{
 	text-align: center;
 }
 header{
+	border-bottom: #E67E22;
+}
+.noDec{
+	text-decoration: none;
+	color: white;
+}
+.noDec:hover{
+	color: white;
 }
 .heatheredText{
 	color: #a0a0a0;
@@ -13,24 +21,28 @@ header{
 .mainNav{
 	text-align: right;
 	display: inline;
-	padding:1em;
+	padding: 1em  1em .8em 1em;
 	margin: 1em 0em 0em 0em;
 	text-decoration: none;
-	color: white;
+	color: #D35400;
 	font-weight: 300;
 	cursor:pointer;
 }
 .mainNav:hover{
-	background-color:#E67E22;
-	color: white;
+	border-bottom:.1em solid #E67E22;
 }
+
+#hiddenLogin{
+	opacity: 0;
+}
+
 nav{
 	text-align: right;
 	position: fixed;
-	top: 0px;
+	top: 10px;
 	left: 0px;
 	min-width: 100%;
-	background-color: #D35400;
+	background-color: white;
 	padding:0em 0em 0em 0em;
 }
 #companylogo{
@@ -38,20 +50,26 @@ nav{
 	position: fixed;
 	padding-left: 1em;
 	margin-top: .5em;
+	cursor:pointer;
 }
 #fixed_height{
 	max-height:35px;
 }
 #loginButton{
-	padding-top:.5em;
-	padding-bottom: .5em;
-	background-color: #16A085;
+	padding-top:.3em;
+	padding-bottom: .3em;
+	background-color: white;
 	border-radius: 6px;
-	color:white;
-	border: .1em solid white;
+	color: #D35400;
+	border: .1em solid #E67E22;
 }
 #loginButton:hover{
-	background-color: #1ABC9C;
+	color: white;
+	background-color: #E67E22;
+}
+#loginButton:active{
+	color: white;
+	background-color: #E67E22;
 }
 #side_margin{
 	margin-left: 1em;
@@ -61,45 +79,76 @@ nav{
 	margin-right: 2em;
 }
 #img_cover{
-	background-size: cover;
 	min-width: 100%;
 	position: fixed;
 	top:50px;
 	left: 0px;
 }
-#signIn{
-	float: left;
+.signIn{
+	background-color: white;
+	border:.1em solid #E67E22;
 	position: absolute;
-	width: 300px;
+	margin-left: 33%;
+	width: 400px;
 	top: 100px;
-	left: 50px;
 	padding: 2em;
 	z-index: 2000;
 }
 
+#regionSelector{
+	position: absolute;
+	top: 55px;
+	left: 5px;
+	opacity: .8;
+}
+.media{
+	height:300px;
+	width: 40%;
+	position: relative;
+	margin: 2em;
+	padding: 2em;
+	background-color: white;
+	float: left;
+	top: 70px;
+}
+.jobs{
+	height:300px;
+	width: 20%;
+	position: relative;
+	margin: 2em;
+	padding: 2em;
+	background-color: white;
+	float: left;
+	top: 50px;
+}
+.events{
+	height:300px;
+	width: 20%;
+	position: relative;
+	margin: 2em;
+	padding: 2em;
+	background-color: white;
+	float: left;
+	top: 50px;
+}
 //css for login box
 
-@import url(http://fonts.googleapis.com/css?family=Karla);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300);
-
 .wrap{
-  padding:120px 0;
-  font-size:62px;
+  padding:60px 0;
+  font-size:60px;
   color:#888;
   width:400px;
-  font-family:'Karla';
-  margin:0 auto;
+  margin-left: 50%;
   text-align:center;
 }
 
 input{
-  font-family:'Ubuntu';
   font-weight:300;
   border:0;
   border-bottom:1px solid #D35400;
   width:100%;
-  height:36px;
-  font-size:1.2em;
+  height:30px;
+  font-size:1em;
   padding-left: .3em;
 }
 
@@ -112,32 +161,39 @@ input:focus{
 button{
   border:0;
   background:transparent;
-  padding:5px;
-  margin-top:50px;
+  padding:2px;
+  margin-top:100px;
   position:relative;
 }
+
 .buttonafter:after{
-content:'';
-display:block;
-position:absolute;
-top:8px;
-left:100%; /*should be set to 100% */
-width:0;
-height:0;
-border-color: transparent transparent transparent #14a03d; /*border color should be same as div div background color*/
-border-style: solid;
-border-width: 5px;
+	content:'';
+	display:block;
+	position:absolute;
+	top:8px;
+	left:100%; /*should be set to 100% */
+	width:0;
+	height:0;
+	border-color: transparent transparent transparent #14a03d; /*border color should be same as div div background color*/
+	border-style: solid;
+	border-width: 5px;
 
 }
 
 .forgot{
-  background:#a0a0a0;
-  color:#fff;
-  float:left;
+	margin-top: 2em;
+	font-size: .7em;
+	padding: .2em;
+	background:#a0a0a0;
+	color:#fff;
+	float:left;
 }
 
-.login{
-  background:#a0a0a0;
-  color:#fff;
-  float:right;
+.loginSignIn{
+	margin-top: 2em;
+	font-size: .7em;
+	padding: .2em;
+	background:#a0a0a0;
+	color:#fff;
+	float:right;
 }

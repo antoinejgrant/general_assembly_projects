@@ -1,38 +1,36 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/slideshow.css">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
 	<script type="text/javascript" src="js/application.js"></script>
-	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>	
 	<title>Main Dashboard</title>
 </head>
 <body>
 	<header>
-		<div id="companylogo"><img src="img/kippsterlogowhite.png" id="fixed_height"></div>
+		<div id="companylogo"><a href="index.html"><img src="img/kippsterlogo.png" id="fixed_height"></a></div>
 		<nav>
-			<ol>
-				<li class="mainNav">About Us</li>
-				<li class="mainNav">Newsletter</li>
+			<ol class="navBar">
+				<li class="mainNav">My Profile</li>
+				<li class="mainNav">Progams</li>
+				<li class="mainNav">Articles</li>
+				<li class="mainNav">Members</li>
 				<li class="mainNav">Events</li>
-				<li class="mainNav" id="right_margin">Contact Us</li>
+				<li class="mainNav">Media</li>
+				<li class="mainNav">Job Listings</li>
+				<span id="side_margin"><li class ="mainNav" id="loginButton">logout</li></span>
 			</ol>
 		</nav>
 	</header>
-	<div class="mainContainer">
-		<div id="thumbs">
-			<div class="thumb" onclick="changePicture(0)"><img src="img/thumb_0.jpg"></div>
-			<div class="thumb" onclick="changePicture(1)"><img src="img/thumb_1.jpg"></div>
-			<div class="thumb" onclick="changePicture(2)"><img src="img/thumb_2.jpg"></div>
-			<div class="thumb" onclick="changePicture(3)"><img src="img/thumb_3.jpg"></div>
-			<div class="thumb" onclick="changePicture(4)"><img src="img/thumb_4.jpg"></div>
-		</div>
-		<div id="mainImageContainer">
-			<img id="mainImage" src="img/thumb_0.jpg" />
-		</div>
-		<div id="controls">
-			<span id="prevButton" onclick="prevImage()" class="button"><</span>
-			<span id="nextButton" onclick="nextImage()" class="button">></span>
-		</div>
+	<div>
+		<img id="img_cover" src="img/dash_back.jpg">
 	</div>
+	<div class="media"></div>
+	<div class="jobs"></div>
+	<div class="events"></div>
 </body>
 </html>

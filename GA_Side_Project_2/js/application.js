@@ -1,52 +1,75 @@
-/*
+function loginClick(){
+  document.getElementById('hiddenLogin').style.opacity = 1;
+}
 
-UPDATED SO THAT IT WORKS BETTER. But I'm still useless as jQuery.
 
-Found on this dribbble: http://dribbble.com/shots/1284939-2point0-CP-Login/attachments/177970
+// Some general UI pack related JS
+// Extend JS String with repeat method
+String.prototype.repeat = function(num) {
+    return new Array(num + 1).join(this);
+};
 
-I know it's basic, I'm not good at this stuff...
+(function($) {
 
-*/
-var username = false;
-var password = false;
-$("#username").on("input", function() {
-  if ( $(this).val().length > 0){
-   username = true;
-  }
-  else
-  {
-    username = false;
-  }
-  if (username && password)
-  {
-    $('.login').css('background', '#14a03d');
-    $('.login').addClass('buttonafter');
-  }
-  else
-  {
-    $('.login').css('background', '#a0a0a0');
-    $('.login').removeClass('buttonafter');
-  }
-});
+  // Add segments to a slider
+  $.fn.addSliderSegments = function (amount) {
+    return this.each(function () {
+      var segmentGap = 100 / (amount - 1) + "%"
+        , segment = "<div class='ui-slider-segment' style='margin-left: " + segmentGap + ";'></div>";
+      $(this).prepend(segment.repeat(amount - 2));
+    });
+  };
 
-$("#password").on("input", function() {
- if ( $(this).val().length > 0){
-   password = true;
-  }
-  else
-  {
-    password = false;
-  }
-    if (username && password)
-  {
-    $('.login').css('background', '#14a03d');
-    $('.login').addClass('buttonafter');
-  }
-  else
-  {
-    $('.login').css('background', '#a0a0a0');
-    $('.login').removeClass('buttonafter');
-  }
-});
+  $(function() {
+  
+    // Todo list
+    $(".todo li").click(function() {
+        $(this).toggleClass("todo-done");
+    });
 
-var loginButton = document.getElementById()
+    // Custom Selects
+    $("select[name='huge']").selectpicker({style: 'btn-hg btn-primary', menuStyle: 'dropdown-inverse'});
+    $("select[name='herolist']").selectpicker({style: 'btn-primary', menuStyle: 'dropdown-inverse'});
+    $("select[name='info']").selectpicker({style: 'btn-info'});
+
+    // Tooltips
+    $("[data-toggle=tooltip]").tooltip("show");
+
+    // Tags Input
+    $(".tagsinput").tagsInput();
+
+    // jQuery UI Sliders
+    var $slider = $("#slider");
+    if ($slider.length) {
+      $slider.slider({
+        min: 1,
+        max: 5,
+        value: 2,
+        orientation: "horizontal",
+        range: "min"
+      }).addSliderSegments($slider.slider("option").max);
+    }
+
+    // Placeholders for input/textarea
+    $("input, textarea").placeholder();
+
+    // Make pagination demo work
+    $(".pagination a").on('click', function() {
+      $(this).parent().siblings("li").removeClass("active").end().addClass("active");
+    });
+
+    $(".btn-group a").on('click', function() {
+      $(this).siblings().removeClass("active").end().addClass("active");
+    });
+
+    // Disable link clicks to prevent page scrolling
+    $('a[href="#fakelink"]').on('click', function (e) {
+      e.preventDefault();
+    });
+
+    // Switch
+    $("[data-toggle='switch']").wrap('<div class="switch" />').parent().bootstrapSwitch();
+    
+  });
+  
+})(jQuery);

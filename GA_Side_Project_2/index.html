@@ -2,34 +2,48 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/demo.css" rel="stylesheet">
 	<script type="text/javascript" src="js/application.js"></script>
-	<title></title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<title>Landing Page</title>
 </head>
 <body>
 	<header>
-		<div id="companylogo"><img src="img/kippsterlogowhite.png" id="fixed_height"></div>
+		<div id="companylogo"><a href="index.html"><img src="img/kippsterlogo.png" id="fixed_height"></a></div>
 		<nav>
-			<ol>
+			<ol class="navBar">
 				<li class="mainNav">About Us</li>
 				<li class="mainNav">Newsletter</li>
 				<li class="mainNav">Events</li>
 				<li class="mainNav">Contact Us</li>
-				<span id="side_margin"><li class ="mainNav" id="loginButton">login</li></span>
+				<span id="side_margin"><li class ="mainNav" id="loginButton" onclick="loginClick('login')">login</li></span>
 			</ol>
 		</nav>
 	</header>
 	<div>
-		<img src="img/kippster_background.png" id="img_cover">
+		<img id="img_cover" src="img/thumb_0.jpg">
 	</div>
-	<div id="signIn" onclick="loginButtonClick('login')">
+    <div class="btn btn-navbar" id="regionSelector">
+      <select name="city" value="img/thumb_0.jpg" id="changingImg" onchange="changeMainImg()">
+        <option value="img/thumb_0.jpg" selected="selected">New York</option>
+        <option value="img/thumb_1.jpg">New Jersey</option>
+        <option value="img/thumb_2.jpg">Philadelphia</option>
+        <option value="img/thumb_3.jpg">Los Angeles</option>
+        <option value="img/thumb_4.jpg">Houston</option>
+      </select>
+    </div>
+    <div class="signIn" id="hiddenLogin">
 		<div class='wrap'>
-		  <h2 class="heatheredText">Login</h2>
 		    <form>
 		        <input type='text' id='username' placeholder='Username'>
 		        <input type='password' id='password' placeholder='Password'>
 		    </form>
-		  <button class='forgot'>FORGOT PASSWORD ?</button> <button class='login'>LOG IN</button>
+		  <button class='forgot'>FORGOT PASSWORD ?</button> <button class='loginSignIn'><a href="dashboard.html" class="noDec">LOG IN</a></button>
 		</div>
 	</div>
+
 </body>
 </html>
