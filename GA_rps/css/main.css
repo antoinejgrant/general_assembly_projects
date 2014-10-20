@@ -9,8 +9,8 @@ header{
 	text-align: center;
 	padding-top: .25em;
 	padding-bottom: .25em;
-	top: 0px;
-	left: 0px;
+	top: 0; /* you don't need units for 0 */
+	left: 0;
 	position: absolute;
 	min-width: 100%;
 }

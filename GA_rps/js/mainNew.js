@@ -21,6 +21,7 @@ function choice(playerChoice){
     	});
     }   	
 
+    // It's great that you can implement this with pure Javascript. But, do you feel comfortable enough with jQuery to do it using the library if you needed to?
 	if(msg == "Draw"){ 
 		document.getElementById('title').innerHTML="draw - you both played " + computerChoice;
 		titleBar.style.backgroundColor = "F39C12";
